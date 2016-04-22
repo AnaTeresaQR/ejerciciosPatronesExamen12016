@@ -9,6 +9,9 @@ public class Estudiantes extends Persona {
     private String carrera;
     private String carnee;
 
+    public Estudiantes() {
+    }
+
     public Estudiantes(String nombre, int edad, String carrera, String carné) {
         super(nombre, edad);
         this.carrera = carrera;

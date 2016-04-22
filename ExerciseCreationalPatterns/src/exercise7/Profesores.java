@@ -8,6 +8,10 @@ public class Profesores extends Persona {
 
     private String cargo;
 
+    public Profesores() {
+
+    }
+
     public Profesores(String nombre, int edad, String cargo) {
         super(nombre, edad);
         this.cargo = cargo;
