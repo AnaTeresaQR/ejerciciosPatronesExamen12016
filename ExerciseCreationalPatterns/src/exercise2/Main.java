@@ -3,8 +3,6 @@ package exercise2;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -31,7 +29,7 @@ public class Main {
             Date d2 = createDate(2011, 6, 9);
             Date d2_1 = createDate(2011, 6, 17);
             Date d2_2 = createDate(2011, 6, 20);
-            
+
             ArrayList<Date> array2 = new ArrayList<>();
             array2.add(d2);
             array2.add(d2_1);

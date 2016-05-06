@@ -15,7 +15,7 @@ import java.util.List;
 public class ManagerList {
 
     private List<Movement> list = new ArrayList();
-    private List<Movement> temp;
+    private List<Movement> listTemp;
 
     private static ManagerList manager = new ManagerList();
 
@@ -43,7 +43,7 @@ public class ManagerList {
      * @throws java.lang.CloneNotSupportedException
      */
     public void add(Movement newMovement) throws ChessException, CloneNotSupportedException {
-        temp = copyList();
+        listTemp = copyList();
         list.add(newMovement);
     }
 
@@ -55,12 +55,12 @@ public class ManagerList {
      */
     public List copyList() throws ChessException {
         Iterator<Movement> iterator = list.iterator();
-        List<Movement> aux = new ArrayList<>();
+        List<Movement> newList = new ArrayList<>(list.size());
 
         while (iterator.hasNext()) {
-            aux.add(iterator.next().copy());
+            newList.add(iterator.next().copy());
         }
-        return aux;
+        return newList;
     }
 
     /**
@@ -69,7 +69,7 @@ public class ManagerList {
      * @return the list that contains the last status of the game
      */
     public List backList() {
-        return temp;
+        return listTemp;
     }
 
     /**

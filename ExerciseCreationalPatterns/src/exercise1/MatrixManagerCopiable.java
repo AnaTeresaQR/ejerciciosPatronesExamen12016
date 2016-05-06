@@ -1,7 +1,6 @@
 package exercise1;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -89,5 +88,5 @@ public class MatrixManagerCopiable implements Cloneable {
             return rowList;
         }
         throw new Error("No es posible que la fila de Empleados sea copiada");
-    }
-}
+}    }
+
